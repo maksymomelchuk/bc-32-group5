@@ -1,10 +1,57 @@
 .button {
   display: inline-block;
   border: none;
+  cursor: pointer;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
   border-radius: 30px;
-  padding: 6px 18px;
-  background-color: $bg-light-green;
+
+  transition: $transition;
+
+  // Header and section Hero "Order now" button
+  &--green {
+    padding: 6px 18px;
+    background-color: $bg-light-green;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-light-green-hover;
+    }
+  }
+
+  // Section offerings "Order Now" button
+  &--white {
+    padding: 10px 22px;
+    background-color: $bg-white;
+    border: 2px solid #7eb101;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #597d00;
+    }
+  }
+
+  // Section subscribe "Subscribe" button
+  &--big {
+    padding: 11px 22px;
+    background-color: $bg-light-green;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-light-green-hover;
+    }
+  }
+
+  // Footer "Subscribe" button
+  &--white-big {
+    padding: 11px 22px;
+    border: 1px solid #7eb101;
+    background-color: $bg-white;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-yellow;
+    }
+  }
 }
