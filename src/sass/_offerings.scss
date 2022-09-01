@@ -5,9 +5,9 @@
   background-repeat: no-repeat;
 }
 
-// .offerings__container {
-//   text-align: center;
-// }
+.offerings__container {
+  padding-bottom: 60px;
+}
 
 .offerings__list {
   display: flex;
@@ -31,7 +31,15 @@
 }
 
 .offerings__text {
-  width: 272px;
+  max-width: 272px;
+  width: 100%;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
+.offerings__subtext {
+  max-width: 252px;
+  width: 100%;
   font-size: 14px;
   line-height: calc(16 / 14);
 }
@@ -39,11 +47,21 @@
 .offerings__item::before {
   content: '';
   display: block;
-  width: 40px;
-  height: 40px;
-  background-color: blue;
+  margin-bottom: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
   border-radius: 50%;
   background-image: url('../images/mobile/offerings/rocket.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.offerings__link {
+  margin-left: 24px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #000000;
 }
