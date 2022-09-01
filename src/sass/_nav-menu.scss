@@ -1,0 +1,28 @@
+.container {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    margin-right: 30px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.list {
+  display: flex;
+  gap: 28px;
+}

@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  padding: 0px 15px;
+  padding: 0px 20px;
   margin: 0px auto;
   width: 100%;
 
@@ -15,10 +15,12 @@ body {
 
   @include tablet {
     width: 768px;
+    padding: 0 32px;
   }
 
   @include desktop {
     width: 1280px;
+    padding: 0 16px;
   }
 }
 
