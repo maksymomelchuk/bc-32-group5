@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container--top {
+  display: flex;
+}
+
+.footer-form__label {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-text;
+}
+
+.footer-form__input {
+  padding: 12px;
+  max-width: 279px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #ffe550;
+  border-radius: 30px;
+}
