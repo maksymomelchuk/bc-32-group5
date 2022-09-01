@@ -1,0 +1,49 @@
+.offerings {
+  background-image: url('../images/mobile/offerings/bg-offerings-mob.png');
+  background-size: 100%;
+  //   background-position: contain;
+  background-repeat: no-repeat;
+}
+
+// .offerings__container {
+//   text-align: center;
+// }
+
+.offerings__list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.offerings__title {
+  margin-bottom: 28px;
+  margin-top: 60px;
+
+  font-size: 28px;
+  line-height: calc(33 / 28);
+}
+
+.offerings__subtitle {
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
+}
+
+.offerings__text {
+  width: 272px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
+.offerings__item::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 50%;
+  background-image: url('../images/mobile/offerings/rocket.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
