@@ -13,6 +13,10 @@
   background-position: left 47px bottom, left 88px bottom, left 220px bottom,
     left 130px bottom, right top, right top 25px, left 4px top 151px,
     left top 127px;
+  @include mobile {
+    max-width: 480px;
+    margin: 0 auto;
+  }
 }
 
 .footer__container--top {
