@@ -45,6 +45,8 @@
 
   // Footer "Subscribe" button
   &--white-big {
+    display: block;
+    margin: 20px 0 0 auto;
     padding: 11px 22px;
     border: 1px solid #7eb101;
     background-color: $bg-white;

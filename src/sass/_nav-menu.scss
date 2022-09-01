@@ -1,6 +1,8 @@
 .footer__nav {
-  margin-left: 81px;
-  margin-right: auto;
+  //   margin-left: 81px;
+  //   margin-right: auto;
+  margin-left: auto;
+  padding-right: 80px;
 }
 
 .nav__list {
@@ -33,7 +35,8 @@
     padding: 10px 0;
   }
 }
-.nav {
+
+.header-nav {
   display: flex;
   align-items: center;
 
@@ -41,15 +44,12 @@
     margin-right: 30px;
   }
 
-  &__item {
-  }
-
   &__link {
     text-decoration: none;
     color: inherit;
   }
 }
-.list {
+.header-nav__list {
   display: flex;
   gap: 28px;
 }

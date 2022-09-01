@@ -1,6 +1,18 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url(../images/mobile/footer/drops-apple-bottom-min.png),
+    url(../images/mobile/footer/apple-bottom-min.png),
+    url(../images/mobile/footer/drops-banan-min.png),
+    url(../images/mobile/footer/banan-min.png),
+    url(../images/mobile/footer/drops-orange-min.png),
+    url(../images/mobile/footer/orange-min.png),
+    url(../images/mobile/footer/drops-apple-left-min.png),
+    url(../images/mobile/footer/apple-left-min.png);
+  background-repeat: no-repeat;
+  background-position: left 47px bottom, left 88px bottom, left 220px bottom,
+    left 130px bottom, right top, right top 25px, left 4px top 151px,
+    left top 127px;
 }
 
 .footer__container--top {
@@ -16,6 +28,7 @@
 }
 
 .footer-form__input {
+  margin-top: 12px;
   display: block;
   padding: 12px;
   min-width: 279px;
@@ -26,13 +39,40 @@
   border-radius: 30px;
 }
 
-.footer-form__button {
-  padding: 11px 22px;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
+.privacy-police {
+  margin-top: 20px;
+  font-size: 10px;
+  line-height: 1.2;
   color: $color-text;
-  background: #ffffff;
-  border: 1px solid $bg-dark-green;
-  border-radius: 30px;
+}
+
+.privacy-police__link {
+  font-size: 10px;
+  line-height: 1.2;
+  color: $bg-dark-green;
+}
+
+.footer__link {
+  font-size: 10px;
+  line-height: 1.2;
+  color: $bg-dark-green;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: auto;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: $color-text;
 }
