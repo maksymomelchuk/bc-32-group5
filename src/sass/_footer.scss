@@ -64,12 +64,8 @@
 
 .footer__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 60px;
-}
-
-.footer__item:not(:last-child) {
-  margin-right: auto;
 }
 
 .footer__text {
