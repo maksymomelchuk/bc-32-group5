@@ -1,18 +1,19 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(../images/mobile/footer/drops-apple-bottom-min.png),
-    url(../images/mobile/footer/apple-bottom-min.png),
-    url(../images/mobile/footer/drops-banan-min.png),
-    url(../images/mobile/footer/banan-min.png),
-    url(../images/mobile/footer/drops-orange-min.png),
-    url(../images/mobile/footer/orange-min.png),
-    url(../images/mobile/footer/drops-apple-left-min.png),
-    url(../images/mobile/footer/apple-left-min.png);
+  background-image: url(../images/mobile/footer/apple-left-mob-min.png),
+    url(../images/mobile/footer/orange-mob-min.png),
+    url(../images/mobile/footer/fruit-bottom-mob-min.png);
+  background-size: 110px 116px, 104px 256px, 253px 66px;
   background-repeat: no-repeat;
-  background-position: left 47px bottom, left 88px bottom, left 220px bottom,
-    left 130px bottom, right top, right top 25px, left 4px top 151px,
-    left top 127px;
+  background-position: left top 133px, top right, left 47 bottom;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/footer/apple-left-mob@2x-min.png),
+      url(../images/mobile/footer/orange-mob@2x-min.png),
+      url(../images/mobile/footer/fruit-bottom-mob@2x-min.png);
+  }
   @include mobile {
     max-width: 480px;
     margin: 0 auto;
@@ -33,14 +34,6 @@
 
 .footer-form__input {
   margin-top: 12px;
-  display: block;
-  padding: 12px;
-  min-width: 279px;
-  width: 100%;
-  height: 42px;
-  background: #ffffff;
-  border: 1px solid #ffe550;
-  border-radius: 30px;
 }
 
 .privacy-police {
