@@ -1,8 +1,12 @@
 body {
   font-family: Roboto;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: $color-text;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .container {
@@ -86,4 +90,7 @@ img {
   font-size: 12px;
   line-height: 1.5;
   color: $color-input-text;
+  @include tablet {
+    width: 279px;
+  }
 }

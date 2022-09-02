@@ -1,18 +1,25 @@
 .footer__nav {
-  //   margin-left: 81px;
-  //   margin-right: auto;
   margin-left: auto;
   padding-right: 80px;
+  @include tablet {
+    margin-left: 114px;
+  }
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .nav__list--footer {
   padding-top: 4px;
   gap: 20px;
+  @include tablet {
+    gap: 28px;
+  }
 }
 
 .nav__link {
@@ -20,11 +27,6 @@
   font-size: 14px;
   line-height: 1.14;
   color: #000000;
-}
-
-.footer-container--top {
-  margin-top: 40px;
-  margin-bottom: 0;
 }
 
 .container {

@@ -1,17 +1,12 @@
-.hero{
-    padding-top: 60px;
-    padding-bottom: 50px;
+.hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
-.hero__title{
-    margin-bottom: 28px;
-    font-size: 28px;
-    line-height: 1.17;
-    color: $color-text;
+.hero__title {
+  margin-bottom: 28px;
 }
-.hero__text{
-    margin-bottom: 28px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    color: $color-text;
+.hero__text {
+  margin-bottom: 28px;
+  line-height: 1.5;
+  color: $color-text;
 }
