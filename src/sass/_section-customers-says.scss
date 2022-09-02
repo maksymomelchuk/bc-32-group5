@@ -10,6 +10,9 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background: url('../images/mobile/customers/customers_bg@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
     }
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -23,6 +26,9 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background: url('../images/tablet/customers/tablet-bg@2x.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
         }
     }
     @include desktop {
@@ -35,6 +41,9 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background: url('../images/desktop/customers/desktop-bg@2x.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
         }
     }
 }
