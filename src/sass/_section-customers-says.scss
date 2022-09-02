@@ -1,0 +1,144 @@
+.section-customers {
+    padding: 60px 0 68px;
+    background: url('../images/mobile/customers/customers_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background: url('../images/mobile/customers/customers_bg@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    @include tablet {
+        padding-bottom: 120px;
+        background: url('../images/tablet/customers/tablet-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background: url('../images/tablet/customers/tablet-bg@2x.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+    }
+    @include desktop {
+        padding: 100px 0 200px;
+        background: url('../images/desktop/customers/desktop-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background: url('../images/desktop/customers/desktop-bg@2x.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+    }
+}
+
+.title-customers {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    @include tablet {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 49px;
+    }
+}
+
+.section-customers__text {
+    margin-top: 53px;
+    font-size: 14px;
+    line-height: 1.14;
+    @include tablet {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+}
+
+.cards-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    @include tablet {
+        flex-direction: row;
+        gap: 32px;
+    }
+    @include desktop {
+        gap: 139px;
+    }
+}
+
+.cards-list__item {
+    position: relative;
+    padding: 52px 8px 8px;
+    min-height: 225px;
+    background-color: #FFFFFF;
+    border-radius: 0 25px 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include desktop {
+        width: 501px;
+    }
+}
+
+.cards-list__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.17;
+    color: $color-text;
+    @include tablet {
+        font-size: 18px;
+        line-height: 1.18;
+    }
+}
+
+.cards-list__thumb {
+    margin-top: 40px;
+    display: flex;
+}
+
+.cards-list__text-wrapper {
+    margin-left: 16px;
+    padding-right: 22px;
+    border-right: 1px solid $bg-dark-green;
+}
+
+.cards-list__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $color-text;
+}
+
+.cards-list__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $color-text;
+}
+
+.stars-list {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.stars-list__icon {
+    fill: $bg-yellow;
+}
