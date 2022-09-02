@@ -9,7 +9,6 @@
 
 .favorites__text {
   margin-top: 20px;
-  font-size: 14px;
   line-height: 1.14;
   text-align: center;
   color: $color-text;
@@ -26,13 +25,14 @@
 
 .favorites__item {
   padding: 18px 17px;
-  border: 11px solid #ffe550;
-  border-radius: 139px;
+  border: 11px solid $bg-yellow;
+  border-radius: 50%;
   object-fit: contain;
 }
 
 .mob-none {
-  @media screen and (max-width: 767px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 }
