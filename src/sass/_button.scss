@@ -11,12 +11,17 @@
 
   // Header and section Hero "Order now" button
   &--green {
+    display: none;
     padding: 6px 18px;
     background-color: $bg-light-green;
 
     &:hover,
     &:focus {
       background-color: $bg-light-green-hover;
+    }
+
+    @include tablet {
+      display: inline-block;
     }
   }
 

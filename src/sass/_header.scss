@@ -1,0 +1,30 @@
+.container {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+}
+
+.burger {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-white;
+  color: $bg-dark-green;
+
+  &__icon {
+    height: 28px;
+    width: 28px;
+    fill: currentColor;
+
+    transition: $transition;
+  }
+
+  &:hover,
+  &:focus {
+    color: $bg-yellow;
+  }
+}
