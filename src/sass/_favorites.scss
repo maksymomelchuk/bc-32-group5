@@ -1,6 +1,10 @@
 .favorites {
   padding-top: 60px;
   padding-bottom: 60px;
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .favorites__title {
@@ -21,16 +25,27 @@
   justify-content: center;
   gap: 20px;
   list-style: none;
-  @include mobile {
+  @include tablet {
     gap: 32px;
+  }
+  @include desktop {
+    margin-top: 40px;
   }
 }
 
 .favorites__item {
-  padding: 18px 17px;
+  padding: 6px;
   border: 11px solid $bg-yellow;
   border-radius: 50%;
   object-fit: contain;
+  @include tablet {
+    padding: 19px;
+    border: 14px solid $bg-yellow;
+  }
+  @include desktop {
+    padding: 23px;
+    border: 16px solid $bg-yellow;
+  }
 }
 
 .mob-none {
