@@ -21,6 +21,9 @@
   justify-content: center;
   gap: 20px;
   list-style: none;
+  @include mobile {
+    gap: 32px;
+  }
 }
 
 .favorites__item {
