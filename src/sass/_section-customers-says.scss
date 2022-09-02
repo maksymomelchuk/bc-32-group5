@@ -1,7 +1,5 @@
 .section-customers {
-    position: relative;
     padding: 60px 0 68px;
-    margin: 0 auto;
     background: url('../images/mobile/customers/customers_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,8 +46,7 @@
     }
 }
 
-.heading {
-    // text-align: center;
+.title-customers {
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
