@@ -59,11 +59,25 @@
   background-position: center;
 }
 
-.offerings__link {
+.offerings__item--touch::before {
+  background-image: url('../images/mobile/offerings/touch.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.offerings__button {
+  display: inline-flex;
+  align-items: center;
+
   margin-left: 24px;
 
   font-size: 14px;
   line-height: 1.5;
   text-decoration: none;
-  color: #000000;
+  color: #000;
+  background-color: transparent;
+}
+
+.offerings__icon {
+  margin-left: 4px;
 }
