@@ -7,7 +7,7 @@
     url(../images/mobile/footer/fruit-bottom-mob-min.png);
   background-size: 110px 116px, 104px 256px, 253px 66px;
   background-repeat: no-repeat;
-  background-position: left top 133px, top right, left 47 bottom;
+  background-position: left top 133px, top right, bottom;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -39,6 +39,7 @@
 
 .footer__container-nav {
   display: flex;
+  align-items: center;
 }
 
 .footer__container-form {
