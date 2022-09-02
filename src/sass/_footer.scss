@@ -18,6 +18,10 @@
     max-width: 480px;
     margin: 0 auto;
   }
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 205px;
+  }
 }
 
 .footer__container--top {
