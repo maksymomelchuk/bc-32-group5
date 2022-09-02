@@ -22,7 +22,8 @@
 .offerings__title {
   margin-bottom: 28px;
   margin-top: 60px;
-  max-width: 280px;
+
+  width: 280px;
 
   font-size: 28px;
   line-height: calc(33 / 28);
@@ -36,9 +37,6 @@
 }
 
 .offerings__text {
-  max-width: 272px;
-  width: 100%;
-
   margin-bottom: 28px;
 
   font-size: 14px;
@@ -46,9 +44,6 @@
 }
 
 .offerings__subtext {
-  max-width: 252px;
-  width: 100%;
-
   font-size: 14px;
   line-height: calc(16 / 14);
 }
