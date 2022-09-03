@@ -55,5 +55,8 @@
     &:focus {
       background-color: $bg-yellow;
     }
+    @include tablet {
+      margin: 0;
+    }
   }
 }
