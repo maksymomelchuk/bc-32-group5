@@ -44,18 +44,16 @@
   align-items: center;
 
   &__list {
-    margin-right: 30px;
-    display: flex;
+    // display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    // margin-right: 30px;
     gap: 28px;
   }
 
   &__link {
     text-decoration: none;
     color: inherit;
-  }
-
-  &__list {
-    display: flex;
-    gap: 28px;
   }
 }

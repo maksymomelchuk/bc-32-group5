@@ -1,4 +1,51 @@
-<header>
+<!-- <header>
+  <div class="container container__header">
+    <div class="header-wrapper">
+      <a href="#" class="logo logo"
+        ><img
+          src="../src/images/desktop/logo.png"
+          alt="Логотип"
+          width="66"
+          height="52"
+      /></a>
+      <nav class="header-nav">
+        <button
+          type="button"
+          class="burger__btn burger__btn--open"
+          aria-expanded="false"
+          data-menu-open
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="burger__icon--open"
+              href="./images/sprite.svg#menu"
+            ></use>
+          </svg>
+        </button>
+        <ul class="header-nav__list list is-hidden" data-menu>
+          <li class="header-nav__item link-accent">
+            <a href="#" class="header-nav__link">Home</a>
+          </li>
+          <li class="header-nav__item link-accent">
+            <a href="#" class="header-nav__link">About</a>
+          </li>
+          <li class="header-nav__item link-accent">
+            <a href="#" class="header-nav__link">Service</a>
+          </li>
+          <li class="header-nav__item link-accent">
+            <a href="#" class="header-nav__link">Menu</a>
+          </li>
+          <li class="header-nav__item link-accent">
+            <a href="#" class="header-nav__link">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="button button--green">Order Now</button>
+      </nav>
+    </div>
+  </div>
+</header> -->
+
+<header class="header">
   <div class="container container__header">
     <a href="#" class="logo logo"
       ><img
@@ -7,25 +54,51 @@
         width="66"
         height="52"
     /></a>
-    <nav class="header-nav">
-      <ul class="header-nav__list list">
-        <li class="header-nav__item link-accent">
-          <a href="#" class="nav__link">Home</a>
-        </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">About</a>
-        </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">Service</a>
-        </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">Menu</a>
-        </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">Contact</a>
-        </li>
-      </ul>
-      <button type="button" class="button button--green">Order Now</button>
-    </nav>
+    <button type="button" class="burger__btn burger__btn--open" data-menu-open>
+      <svg width="23" height="23" aria-label="Вмикач меню">
+        <use class="menu-btn__icon-menu" href="./images/sprite.svg#menu"></use>
+      </svg>
+    </button>
+    <div class="menu-container">
+      <div class="mob-menu is-hidden">
+        <button
+          class="burger__btn burger__btn--close"
+          type="button"
+          data-menu-close
+        >
+          <svg class="mob-menu__btn-img" width="12" height="12">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul class="header-nav__list list">
+            <li class="header-nav__item" data-menu-close>
+              <a class="header-nav__link" href="#hero"> Home</a>
+            </li>
+            <li class="header-nav__item" data-menu-close>
+              <a class="header-nav__link" href="#offerings">About</a>
+            </li>
+            <li class="header-nav__item" data-menu-close>
+              <a class="header-nav__link" href="#favorites">Service</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#customers-say">Menu</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#subscribe">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- <nav class='nav'>
+     <ul class='nav__list'>
+       <li class='nav__item'><a class='nav__link nav__link current' href='#hero'>Home</a></li>
+       <li class='nav__item'><a class='nav__link' href='#offerings'>About</a></li>
+       <li class='nav__item'><a class='nav__link' href='#favorites'>Service</a></li>
+       <li class='nav__item'><a class='nav__link' href='#customers-say'>Menu</a></li>
+       <li class='nav__item'><a class='nav__link' href='#subscribe'>Contact</a></li>
+     </ul>
+   </nav> -->
   </div>
 </header>
