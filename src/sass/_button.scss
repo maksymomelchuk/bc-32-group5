@@ -64,4 +64,16 @@
       margin: 0;
     }
   }
+
+  // Subscribe section button
+  &--green-big {
+    display: block;
+    padding: 11px 22px;
+    background-color: $bg-light-green;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-light-green-hover;
+    }
+  }
 }
