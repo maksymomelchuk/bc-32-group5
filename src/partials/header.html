@@ -1,31 +1,70 @@
-<header>
+<header class="header">
   <div class="container container__header">
-    <a href="#" class="logo logo__header"
-      ><img
-        src="../src/images/desktop/logo.png"
-        alt="Логотип"
-        width="66"
-        height="52"
-    /></a>
+    <a class="logo-header" href="#hero">
+      <svg width="66" height="52">
+        <use href="./images/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <button type="button" class="burger__btn burger__btn--open" data-menu-open>
+      <svg width="28" height="28" aria-label="Перемикач стану меню">
+        <use class="burger__icon" href="./images/sprite.svg#menu"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu is-hidden">
+      <button
+        class="burger__btn burger__btn--close"
+        type="button"
+        data-menu-close
+      >
+        <svg class="burger__icon--black" width="24" height="24">
+          <use href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item" data-menu-close>
+            <a class="mobile-nav__link mobile-nav__link--current" href="#hero">
+              Home</a
+            >
+          </li>
+          <li class="mobile-nav__item" data-menu-close>
+            <a class="mobile-nav__link" href="#offerings">About</a>
+          </li>
+          <li class="mobile-nav__item" data-menu-close>
+            <a class="mobile-nav__link" href="#favorites">Service</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#customers">Menu</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#subscribe">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <nav class="header-nav">
-      <ul class="header-nav__list list">
-        <li class="header-nav__item link-accent">
-          <a href="#" class="nav__link">Home</a>
+      <ul class="header-nav__list list" id="header-nav">
+        <li class="header-nav__item">
+          <a class="header-nav__link header-nav__link--current" href="#hero"
+            >Home</a
+          >
         </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">About</a>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#offerings">About</a>
         </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">Service</a>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#favorites">Service</a>
         </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">Menu</a>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#customers">Menu</a>
         </li>
-        <li class="header-nav__item link-accent">
-          <a href="#" class="header-nav__link">Contact</a>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#subscribe">Contact</a>
         </li>
       </ul>
-      <button type="button" class="button button--green">Order Now</button>
     </nav>
+    <button class="button button--green modal-open" type="button">
+      Order Now
+    </button>
   </div>
 </header>
