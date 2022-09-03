@@ -34,6 +34,29 @@
     top: 149px;
   }
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 28px;
+  width: 34px;
+  color: #2c2c2c;
+  border: none;
+  background-color: $bg-white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  transition: color $transition;
+
+  &:hover {
+    color: $bg-dark-green;
+  }
+}
+
 .border__svg {
-  display: block;
+  fill: currentColor;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev::after {
+  content: '';
 }
