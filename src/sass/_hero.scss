@@ -1,12 +1,36 @@
 .hero {
   padding-top: 60px;
   padding-bottom: 50px;
+  @include tablet {
+    padding-bottom: 0px;
+    position: relative;
+  }
 }
 .hero__title {
   margin-bottom: 28px;
+  @include tablet{
+    max-width: 537px;
+    margin-bottom: 44px;
+  }
 }
 .hero__text {
   margin-bottom: 28px;
   line-height: 1.5;
   color: $color-text;
+  @include tablet{
+    margin-bottom: 40px;
+    width: 336px;
+  }
+} 
+@include tablet{
+.border{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border: 14px solid $bg-yellow;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    top: 149px;
+}
 }
