@@ -79,6 +79,7 @@
 
 .order-form__name {
   margin-bottom: 2px;
+  padding-left: 12px;
 
   font-weight: 500;
   font-size: 16px;
@@ -87,4 +88,22 @@
 
 .order-form__input {
   margin-bottom: 24px;
+
+  border-color: $bg-dark-green;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.order-form__button {
+  min-width: 106px;
+  align-self: center;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-light-green;
+  }
 }
