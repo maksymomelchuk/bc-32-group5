@@ -26,6 +26,7 @@
   left: 50%;
 
   width: 100vw;
+  max-width: 458px;
   min-height: 449px;
   padding: 32px 20px;
 
@@ -35,6 +36,10 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transition;
+
+  @include tablet {
+    padding: 32px;
+  }
 }
 
 .modal__close-btn {
@@ -88,6 +93,8 @@
 
 .order-form__input {
   margin-bottom: 24px;
+  max-width: 440px;
+  height: 48px;
 
   border-color: $bg-dark-green;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -95,6 +102,10 @@
   &::placeholder {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @include tablet {
+    width: 394px;
   }
 }
 
