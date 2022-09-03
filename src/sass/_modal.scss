@@ -96,12 +96,26 @@
   max-width: 440px;
   height: 48px;
 
-  border-color: $bg-dark-green;
+  font-size: 16px;
+  line-height: 20px;
+
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 
   &::placeholder {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  &:focus {
+    outline: 2px solid #bbf330;
+  }
+
+  &:invalid {
+    border-color: red;
+  }
+
+  &:required {
+    border-color: $bg-dark-green;
   }
 
   @include tablet {
