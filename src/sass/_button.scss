@@ -65,15 +65,20 @@
     }
   }
 
-  // Subscribe section button
+
+  // Section Subscribe button
   &--green-big {
     display: block;
+    margin: 0 0 0 auto;
     padding: 11px 22px;
     background-color: $bg-light-green;
 
     &:hover,
     &:focus {
-      background-color: $bg-light-green-hover;
+    background-color: $bg-light-green-hover;
+    }
+    @include tablet {
+      margin: 0;
     }
   }
 }

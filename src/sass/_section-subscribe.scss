@@ -62,13 +62,6 @@
     }
 }
 
-.button--green-big {
-    margin: 0 0 0 auto;
-    @include tablet {
-        margin: 0;
-    }
-}
-
 .section-subscribe__img-wrapper {
     position: absolute;
     top: -13%;
