@@ -22,6 +22,11 @@
     width: 336px;
   }
 }
+@media screen and (max-width: 768px) {
+  .border {
+    display: none;
+  }
+}
 @include tablet {
   .border {
     position: absolute;
@@ -32,6 +37,10 @@
     position: absolute;
     right: 40px;
     top: 149px;
+    transition: border $transition;
+    &:hover {
+      border: 14px solid $bg-light-green;
+    }
   }
 }
 
@@ -43,20 +52,23 @@
   border: none;
   background-color: $bg-white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-
+  border-radius: 8px;
   transition: color $transition;
+  transition: box-shadow $transition;
 
   &:hover {
     color: $bg-dark-green;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .border__svg {
+    fill: $bg-dark-green;
   }
 }
-
 .border__svg {
-  fill: currentColor;
+  transition: fill $transition;
 }
 
-.swiper-button-next:after,
+.swiper-button-next::after,
 .swiper-button-prev::after {
   content: '';
 }
