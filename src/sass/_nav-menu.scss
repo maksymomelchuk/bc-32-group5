@@ -28,32 +28,3 @@
   line-height: 1.14;
   color: #000000;
 }
-
-.container {
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-
-  &__list {
-    // display: none;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    // margin-right: 30px;
-    gap: 28px;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: inherit;
-  }
-}
