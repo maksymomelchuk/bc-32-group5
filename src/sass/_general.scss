@@ -99,6 +99,9 @@ img {
   &:not(:focus):not(:placeholder-shown):required:valid {
     border-color: green;
   }
+  &:focus:not(:placeholder-shown):required:valid {
+    border-color: green;
+  }
 
   &:not(:focus):not(:placeholder-shown):required:invalid {
     border-color: #ff705d;
