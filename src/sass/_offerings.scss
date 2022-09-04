@@ -115,3 +115,11 @@
 .offerings__icon {
   margin-left: 4px;
 }
+
+.offerings__thumb {
+  display: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: block;
+  }
+}
