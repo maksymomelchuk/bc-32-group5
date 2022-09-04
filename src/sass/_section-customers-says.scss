@@ -1,6 +1,6 @@
-.section-customers {
-  padding: 60px 0 68px;
-}
+// .section-customers {
+//   padding-bottom: 68px;
+// }
 .container__customers {
   padding-top: 60px;
   padding-bottom: 68px;
@@ -34,7 +34,6 @@
     }
   }
   @include desktop {
-    padding: 100px 0 200px;
     padding-top: 100px;
     padding-bottom: 200px;
     background: url('../images/desktop/customers/desktop-bg.png');
