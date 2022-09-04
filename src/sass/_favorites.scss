@@ -38,13 +38,30 @@
   border: 11px solid $bg-yellow;
   border-radius: 50%;
   object-fit: contain;
+
+  transition: border $transition;
+
+  &:hover,
+  &:focus {
+    border: 11px solid $bg-light-green;
+  }
   @include tablet {
     padding: 19px;
     border: 14px solid $bg-yellow;
+
+    &:hover,
+    &:focus {
+      border: 14px solid $bg-light-green;
+    }
   }
   @include desktop {
     padding: 23px;
     border: 16px solid $bg-yellow;
+
+    &:hover,
+    &:focus {
+      border: 16px solid $bg-light-green;
+    }
   }
 }
 
