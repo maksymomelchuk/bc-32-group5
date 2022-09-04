@@ -1,5 +1,4 @@
 .section-subscribe {
-  position: relative;
   padding: 60px 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -69,13 +68,13 @@
 .section-subscribe__img-wrapper {
   position: absolute;
   top: -37%;
-  left: 25%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 161px;
   height: 78px;
   @media (min-width: 480px) {
     position: absolute;
     top: -37%;
-    left: 35%;
   }
   @include tablet {
     position: absolute;
