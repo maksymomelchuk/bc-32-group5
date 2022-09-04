@@ -33,13 +33,17 @@
         <form class="footer-form">
           <label for="user_email" class="footer-form__label">Subscribe</label>
           <div class="input-box">
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              id="user_email"
-              class="footer-form__input input"
-            />
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                id="user_email"
+                class="footer-form__input input"
+                required
+              />
+              <p class="error">Not a valid email address (example@email.com)</p>
+            </div>
             <button type="submit" class="button button--white-big">
               Subscribe
             </button>

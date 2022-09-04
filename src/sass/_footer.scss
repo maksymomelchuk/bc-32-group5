@@ -2,6 +2,7 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   background-image: url(../images/mobile/footer/apple-left-mob-min.png),
     url(../images/mobile/footer/orange-mob-min.png),
     url(../images/mobile/footer/fruit-bottom-mob-min.png);
@@ -77,6 +78,30 @@
   font-size: 14px;
   line-height: 1.5;
   color: $color-text;
+}
+
+.footer-form__input {
+  &::placeholder {
+    color: $color-input-text;
+  }
+  &:not(:focus):not(:placeholder-shown):required:valid {
+    border-color: green;
+  }
+
+  &:not(:focus):not(:placeholder-shown):required:invalid {
+    border-color: #ff705d;
+  }
+}
+
+.error {
+  color: #ff705d;
+  display: none;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.input:not(:focus):not(:placeholder-shown):required:invalid + .error {
+  display: block;
 }
 
 .input-box {
