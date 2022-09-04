@@ -47,6 +47,16 @@
 .offerings__container {
   display: flex;
   flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+    gap: 90px;
+  }
+}
+
+.offerings__content {
+  @include desktop {
+    max-width: 573px;
+  }
 }
 
 .offerings__img-container {
@@ -88,11 +98,17 @@
   @include tablet {
     gap: 116px;
   }
+  @include desktop {
+    gap: 67px;
+  }
 }
 
 .offerings__item {
   @include tablet {
     width: calc((100% - 116px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 67px) / 2);
   }
 }
 
@@ -104,6 +120,7 @@
 }
 
 .offerings__subtext {
+  font-size: 14px;
   line-height: calc(16 / 14);
   @include desktop {
     line-height: 1.5;
