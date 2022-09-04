@@ -90,4 +90,41 @@ img {
   @include tablet {
     width: 279px;
   }
+  &:focus {
+    outline: transparent;
+  }
+  &::placeholder {
+    color: $color-input-text;
+  }
+  &:not(:focus):not(:placeholder-shown):required:valid {
+    border-color: green;
+  }
+
+  &:not(:focus):not(:placeholder-shown):required:invalid {
+    border-color: #ff705d;
+  }
+}
+
+.error {
+  margin-top: 4px;
+  color: #ff705d;
+  display: none;
+  font-size: 10px;
+  line-height: 1.5;
+  &::before {
+    position: relative;
+    transform: translateY(20%);
+    display: inline-block;
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    content: '';
+    background-image: url(../images/error.svg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+  }
+}
+
+.input:not(:focus):not(:placeholder-shown):required:invalid + .error {
+  display: block;
 }

@@ -8,13 +8,17 @@
       </p>
       <form class="suscribe-form">
         <label for="user_email" class="suscribe-form__label"></label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          id="user_email"
-          class="input subscribe-form__input"
-        />
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            id="user_email"
+            class="input subscribe-form__input"
+            required
+          />
+          <p class="error">Not a valid email address (example@email.com)</p>
+        </div>
         <button type="submit" class="button button--green-big">
           Subscribe
         </button>
