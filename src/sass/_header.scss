@@ -133,3 +133,32 @@
     }
   }
 }
+
+// Up button
+
+.up {
+  width: 50px;
+  height: 50px;
+  // background-color: $bg-yellow;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0.4;
+
+  transition: opacity $transition;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.up-icon {
+  fill: $bg-dark-green;
+}
