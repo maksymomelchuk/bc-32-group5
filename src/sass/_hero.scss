@@ -24,26 +24,28 @@
     width: 336px;
   }
 }
-@media screen and (max-width: 768px) {
-  .border {
-    display: none;
+
+.border {
+  width: 320px;
+  height: 320px;
+  border: 14px solid $bg-yellow;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 89px;
+  transition: border $transition;
+
+  display: none;
+
+  &:hover {
+    border: 14px solid $bg-light-green;
+  }
+
+  @include tablet {
+    display: block;
   }
 }
-@include tablet {
-  .border {
-    width: 320px;
-    height: 320px;
-    border: 14px solid $bg-yellow;
-    border-radius: 50%;
-    position: absolute;
-    right: 40px;
-    top: 89px;
-    transition: border $transition;
-    &:hover {
-      border: 14px solid $bg-light-green;
-    }
-  }
-}
+
 .swiper {
   position: absolute;
   width: 320px;
@@ -65,8 +67,8 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  height: 28px;
-  width: 34px;
+  height: 34px;
+  width: 28px;
   color: #2c2c2c;
   border: none;
   background-color: $bg-white;
@@ -84,6 +86,7 @@
   }
 }
 .border__svg {
+  fill: currentColor;
   transition: fill $transition;
 }
 
@@ -92,8 +95,14 @@
   content: '';
 }
 .swiper-button-next {
-  right: -25px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(50%);
 }
 .swiper-button-prev {
-  left: -25px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%);
 }
