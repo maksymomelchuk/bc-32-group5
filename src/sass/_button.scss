@@ -11,12 +11,17 @@
 
   // Header and section Hero "Order now" button
   &--green {
+    display: none;
     padding: 6px 18px;
     background-color: $bg-light-green;
 
     &:hover,
     &:focus {
       background-color: $bg-light-green-hover;
+    }
+
+    @include tablet {
+      display: inline-block;
     }
   }
 
@@ -50,10 +55,26 @@
     padding: 11px 22px;
     border: 1px solid #7eb101;
     background-color: $bg-white;
-
     &:hover,
     &:focus {
       background-color: $bg-yellow;
+    }
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+
+  // Section Subscribe button
+  &--green-big {
+    display: block;
+    margin: 0 0 0 auto;
+    padding: 11px 22px;
+    background-color: $bg-light-green;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-light-green-hover;
     }
     @include tablet {
       margin: 0;
