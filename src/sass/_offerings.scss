@@ -1,11 +1,8 @@
-.offerings {
-  padding-bottom: 60px;
-  padding-top: 41px;
-}
-
 .offerings__container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
+
   @include desktop {
     flex-direction: row;
     gap: 90px;
@@ -22,7 +19,6 @@
   }
 
   @include tablet {
-    padding-top: 150px;
     padding-bottom: 100px;
     background: url('../images/tablet/offerings/bg-offerings-tab.png');
     background-repeat: no-repeat;
@@ -37,8 +33,7 @@
   }
 
   @include desktop {
-    padding-top: 177px;
-    padding-bottom: 43px;
+    padding-bottom: 0;
     background: url('../images/desktop/offerings/bg-offerings-desk.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,16 +50,19 @@
 .offerings__content {
   @include desktop {
     max-width: 573px;
-    padding-top: 83px;
-    padding-bottom: 57px;
+    padding-top: 260px;
+    padding-bottom: 100px;
   }
 }
 
 .offerings__img-container {
+  padding-top: 41px;
+
   display: flex;
   justify-content: center;
 
   @include tablet {
+    padding-top: 150px;
     justify-content: left;
     align-items: center;
     gap: 29px;
