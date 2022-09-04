@@ -47,20 +47,53 @@
 .offerings__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.offerings__list {
+.offerings__img-container {
   display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tablet {
+    justify-content: left;
+    align-items: center;
+    gap: 29px;
+  }
 }
 
 .offerings__title {
   margin-bottom: 28px;
   margin-top: 60px;
 
-  width: 280px;
+  @include tablet {
+    max-width: 526px;
+  }
+}
+.offerings__text {
+  margin-bottom: 28px;
+
+  line-height: calc(16 / 14);
+  @include tablet {
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    line-height: 1.5;
+  }
+}
+
+.offerings__list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  @include tablet {
+    gap: 116px;
+  }
+}
+
+.offerings__item {
+  @include tablet {
+    width: calc((100% - 116px) / 2);
+  }
 }
 
 .offerings__subtitle {
@@ -70,16 +103,11 @@
   line-height: calc(21 / 18);
 }
 
-.offerings__text {
-  margin-bottom: 28px;
-
-  font-size: 14px;
-  line-height: calc(16 / 14);
-}
-
 .offerings__subtext {
-  font-size: 14px;
   line-height: calc(16 / 14);
+  @include desktop {
+    line-height: 1.5;
+  }
 }
 
 .offerings__item::before {
@@ -97,6 +125,13 @@
 
 .offerings__item--touch::before {
   background-image: url('../images/mobile/offerings/touch.svg');
+}
+
+.offerings__btn-wrapper {
+  margin-top: 28px;
+  @include tablet {
+    margin-top: 40px;
+  }
 }
 
 .offerings__button {
@@ -120,6 +155,8 @@
   display: none;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
+    display: flex;
+    align-items: baseline;
+    gap: 44px;
   }
 }
