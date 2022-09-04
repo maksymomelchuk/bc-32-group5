@@ -1,0 +1,80 @@
+.offerings {
+  background-image: url('../images/mobile/offerings/bg-offerings-mob.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.offerings__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 60px;
+  padding-top: 41px;
+}
+
+.offerings__list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.offerings__title {
+  margin-bottom: 28px;
+  margin-top: 60px;
+
+  width: 280px;
+}
+
+.offerings__subtitle {
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
+}
+
+.offerings__text {
+  margin-bottom: 28px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
+.offerings__subtext {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
+.offerings__item::before {
+  content: '';
+  display: block;
+  margin-bottom: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: $white-color;
+  border-radius: 50%;
+  background-image: url('../images/mobile/offerings/rocket.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.offerings__item--touch::before {
+  background-image: url('../images/mobile/offerings/touch.svg');
+}
+
+.offerings__button {
+  display: inline-flex;
+  align-items: center;
+
+  margin-left: 24px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: $black-color;
+  background-color: transparent;
+}
+
+.offerings__icon {
+  margin-left: 4px;
+}

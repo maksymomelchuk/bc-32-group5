@@ -1,0 +1,47 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-modal-close>
+      <svg width="11" height="11">
+        <use href="./images/sprite.svg#modal-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Order Form</p>
+    <form class="order-form">
+      <label for="name" class="order-form__name">Name</label>
+      <input
+        type="text"
+        class="order-form__input input"
+        name="name"
+        id="name"
+        placeholder="Your name"
+        minlength="3"
+        maxlength="25"
+        required
+      />
+
+      <label for="tel" class="order-form__name">Phone number</label>
+      <input
+        type="tel"
+        class="order-form__input input"
+        name="tel"
+        id="tel"
+        placeholder="+38(0_ _) _ _ _   _ _   _ _"
+        required
+      />
+
+      <label for="email" class="order-form__name">E-mail</label>
+      <input
+        type="email"
+        class="order-form__input input"
+        name="email"
+        id="email"
+        placeholder="example@gmail.com"
+        required
+      />
+
+      <button type="submit" class="order-form__button button button--white">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
