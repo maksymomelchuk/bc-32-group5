@@ -4,6 +4,9 @@
   @include tablet {
     padding-bottom: 0px;
   }
+  @include desktop {
+    padding-top: 159px;
+  }
 }
 .hero__container {
   position: relative;
@@ -14,6 +17,10 @@
     max-width: 537px;
     margin-bottom: 44px;
   }
+  @include desktop {
+    font-size: 48px;
+    max-width: 502;
+  }
 }
 .hero__text {
   margin-bottom: 28px;
@@ -22,6 +29,9 @@
   @include tablet {
     margin-bottom: 40px;
     width: 336px;
+  }
+  @include desktop {
+    width: 502px;
   }
 }
 
@@ -40,9 +50,17 @@
   &:hover {
     border: 14px solid $bg-light-green;
   }
-
   @include tablet {
     display: block;
+  }
+  @include desktop {
+    top: -145px;
+    width: 580px;
+    height: 580px;
+    border: 26px solid $bg-yellow;
+    &:hover {
+      border: 26px solid $bg-light-green;
+    }
   }
 }
 
@@ -60,6 +78,14 @@
   &:hover {
     border: 14px solid $bg-light-green;
   }
+  @include desktop {
+    width: 580px;
+    height: 580px;
+    border: 26px solid $bg-yellow;
+    &:hover {
+      border: 26px solid $bg-light-green;
+    }
+  }
 }
 
 .swiper-wrapper {
@@ -67,8 +93,8 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  height: 34px;
-  width: 28px;
+  height: 28px;
+  width: 34px;
   color: #2c2c2c;
   border: none;
   background-color: $bg-white;
@@ -76,13 +102,16 @@
   border-radius: 8px;
   transition: color $transition;
   transition: box-shadow $transition;
-
   &:hover {
     color: $bg-dark-green;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
   &:hover .border__svg {
     fill: $bg-dark-green;
+  }
+  @include desktop {
+    height: 40px;
+    width: 48px;
   }
 }
 .border__svg {
@@ -98,11 +127,21 @@
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateX(50%);
+  padding: 4px 9px 4px 13px;
+  transform: translateX(70%);
+  @include desktop {
+    transform: translateX(80%);
+    padding: 5px 13px 5px 18px;
+  }
 }
 .swiper-button-prev {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateX(-50%);
+  padding: 4px 13px 4px 9px;
+  transform: translateX(-70%);
+  @include desktop {
+    transform: translateX(-80%);
+    padding: 5px 18px 5px 13px;
+  }
 }
