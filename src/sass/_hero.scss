@@ -1,12 +1,108 @@
 .hero {
   padding-top: 60px;
   padding-bottom: 50px;
+  @include tablet {
+    padding-bottom: 0px;
+  }
+}
+.hero__container {
+  position: relative;
 }
 .hero__title {
   margin-bottom: 28px;
+  @include tablet {
+    max-width: 537px;
+    margin-bottom: 44px;
+  }
 }
 .hero__text {
   margin-bottom: 28px;
   line-height: 1.5;
   color: $color-text;
+  @include tablet {
+    margin-bottom: 40px;
+    width: 336px;
+  }
+}
+
+.border {
+  width: 320px;
+  height: 320px;
+  border: 14px solid $bg-yellow;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 89px;
+  transition: border $transition;
+
+  display: none;
+
+  &:hover {
+    border: 14px solid $bg-light-green;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.swiper {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border: 14px solid $bg-yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: border $transition;
+  &:hover {
+    border: 14px solid $bg-light-green;
+  }
+}
+
+.swiper-wrapper {
+  transition: $transition;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  height: 34px;
+  width: 28px;
+  color: #2c2c2c;
+  border: none;
+  background-color: $bg-white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  transition: color $transition;
+  transition: box-shadow $transition;
+
+  &:hover {
+    color: $bg-dark-green;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .border__svg {
+    fill: $bg-dark-green;
+  }
+}
+.border__svg {
+  fill: currentColor;
+  transition: fill $transition;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(50%);
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%);
 }
