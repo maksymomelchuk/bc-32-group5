@@ -14,15 +14,19 @@
       url(../images/mobile/footer/fruit-bottom-mob@2x-min.png);
   }
   @include tablet {
-    background-image: url(../images/tablet/footer/orange-left-tablet-min.png),
+    background-image: url(../images/tablet/footer/orange-right-tablet-min.png),
+      url(../images/tablet/footer/orange-left-tablet-min.png),
+      url(../images/tablet/footer/apple-right-tablet-min.png),
       url(../images/tablet/footer/fruit-bottom-tablet-min.png);
-    background-size: 203px 365px, 768px 506px;
+    background-size: 203px 365px, 184px 49px, 132px 56px, 768px 506px;
     background-repeat: no-repeat;
-    background-position: top right, center bottom;
+    background-position: top right, left bottom, right bottom, center bottom;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/tablet/footer/orange-left-tablet@2x-min.png),
+      background-image: url(../images/tablet/footer/orange-right-tablet@2x-min.png),
+        url(../images/tablet/footer/orange-left-tablet@2x-min.png),
+        url(../images/tablet/footer/apple-right-tablet@2x-min.png),
         url(../images/tablet/footer/fruit-bottom-tablet@2x-min.png);
     }
   }
