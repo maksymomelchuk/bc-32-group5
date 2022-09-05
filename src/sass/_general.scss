@@ -135,3 +135,7 @@ img {
 .input:not(:focus):not(:placeholder-shown):required:invalid + .error {
   display: block;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

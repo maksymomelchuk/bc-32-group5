@@ -1,10 +1,5 @@
 .footer {
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background-image: url(../images/mobile/footer/apple-left-mob-min.png),
     url(../images/mobile/footer/orange-mob-min.png),
     url(../images/mobile/footer/fruit-bottom-mob-min.png);
@@ -18,19 +13,12 @@
       url(../images/mobile/footer/orange-mob@2x-min.png),
       url(../images/mobile/footer/fruit-bottom-mob@2x-min.png);
   }
-  @include mobile {
-    width: 480px;
-    margin: 0 auto;
-  }
   @include tablet {
-    padding-top: 100px;
-    padding-bottom: 205px;
-    width: 768px;
     background-image: url(../images/tablet/footer/orange-left-tablet-min.png),
       url(../images/tablet/footer/fruit-bottom-tablet-min.png);
     background-size: 203px 365px, 768px 506px;
     background-repeat: no-repeat;
-    background-position: top right, right bottom;
+    background-position: top right, center bottom;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -39,9 +27,6 @@
     }
   }
   @include desktop {
-    width: 1280px;
-    padding-top: 100px;
-    padding-bottom: 100px;
     background-image: url(../images/desktop/footer/fruit-desktop-min.png);
     background-size: 1211px 266px;
     background-repeat: no-repeat;
@@ -53,18 +38,37 @@
     }
   }
 }
-
+.footer__container {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mobile {
+    width: 480px;
+    margin: 0 auto;
+  }
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 205px;
+    width: 768px;
+  }
+  @include desktop {
+    width: 1280px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 .holder {
   @include desktop {
     display: flex;
   }
 }
-
 .footer__container-nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  @include tablet {
+    align-items: center;
+  }
 }
-
 .footer__container-form {
   margin-top: 40px;
   margin-bottom: 0;
@@ -73,7 +77,6 @@
     margin-left: 320px;
   }
 }
-
 .footer-form__label {
   display: block;
   font-weight: 500;
@@ -81,7 +84,6 @@
   line-height: 1.5;
   color: $color-text;
 }
-
 .input-box {
   margin-top: 12px;
   @include tablet {
@@ -90,7 +92,6 @@
     gap: 13px;
   }
 }
-
 .privacy-police {
   margin-top: 20px;
   font-size: 10px;
@@ -102,7 +103,6 @@
     line-height: 1.16;
   }
 }
-
 .privacy-police__link {
   font-size: 10px;
   line-height: 1.2;
@@ -112,7 +112,6 @@
     line-height: 1.16;
   }
 }
-
 .footer-box-bottom {
   @include tablet {
     display: flex;
@@ -125,7 +124,6 @@
     margin-top: 80px;
   }
 }
-
 .footer__list {
   display: flex;
   justify-content: space-between;
@@ -136,7 +134,6 @@
     margin-top: 0;
   }
 }
-
 .footer__link {
   font-size: 10px;
   line-height: 1.2;
@@ -146,7 +143,6 @@
     line-height: 1.16;
   }
 }
-
 .footer__text {
   display: flex;
   justify-content: center;
