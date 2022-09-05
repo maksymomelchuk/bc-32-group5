@@ -1,12 +1,4 @@
-.offerings__container {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 60px;
-
-  @include desktop {
-    flex-direction: row;
-    gap: 90px;
-  }
+.offerings {
   background-image: url('../images/mobile/offerings/bg-offerings-mob.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,6 +36,17 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+  }
+}
+
+.offerings__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+
+  @include desktop {
+    flex-direction: row;
+    gap: 90px;
   }
 }
 
