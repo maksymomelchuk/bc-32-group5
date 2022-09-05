@@ -116,7 +116,7 @@ img {
   margin-top: 4px;
   color: #ff705d;
   display: none;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.5;
   &::before {
     position: relative;
@@ -129,6 +129,10 @@ img {
     background-image: url(../images/error.svg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
+  }
+
+  @include tablet {
+    font-size: 13px;
   }
 }
 

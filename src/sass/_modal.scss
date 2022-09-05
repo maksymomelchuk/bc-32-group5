@@ -90,10 +90,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
+  &:not(:first-child) {
+    margin-top: 24px;
+  }
 }
 
 .order-form__input {
-  margin-bottom: 24px;
   max-width: 440px;
   height: 48px;
 
@@ -102,6 +104,9 @@
   color: $color-text;
 
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  // &:not(:last-child) {
+  //   margin-bottom: 24px;
+  // }
 
   &::placeholder {
     font-size: 16px;
@@ -126,6 +131,7 @@
 }
 
 .order-form__button {
+  margin-top: 32px;
   min-width: 106px;
   align-self: center;
 
@@ -133,4 +139,9 @@
   &:focus {
     background-color: $bg-light-green;
   }
+}
+
+.order-form__error {
+  padding-left: 12px;
+  margin-top: 0px;
 }
