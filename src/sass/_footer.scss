@@ -64,9 +64,16 @@
 }
 .footer__container-nav {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
+  max-width: 200px;
   @include tablet {
     align-items: center;
+    max-width: 500px;
+  }
+
+  @include desktop {
+    max-width: 535px;
   }
 }
 .footer__container-form {
