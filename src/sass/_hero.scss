@@ -1,11 +1,11 @@
 .hero {
-  padding-top: 60px;
+  padding-top: 132px;
   padding-bottom: 50px;
   @include tablet {
     padding-bottom: 0px;
   }
   @include desktop {
-    padding-top: 159px;
+    padding-top: 231px;
   }
 }
 .hero__container {
