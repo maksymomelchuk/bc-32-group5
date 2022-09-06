@@ -1,14 +1,9 @@
 .header {
   background-color: #fefefe;
   box-shadow: 0 4px 24px rgba(105, 105, 105, 0.1);
-
-  width: 100%;
-
   position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
+  width: 100%;
+  z-index: 3;
 }
 
 .container__header {
@@ -17,7 +12,6 @@
   padding-bottom: 10px;
   display: flex;
   align-items: center;
-  background-color: #fefefe;
 }
 
 .logo-header {
